@@ -1,0 +1,11 @@
+<div class="form-group list-group-item mt-0">
+  <label for="inputState">{{ label }}</label>
+  <select [disabled]="disabled" class="form-control" [value]="defaultSelection?.name" (change)="onOptionChange($event)">
+    <option value="null" selected>
+      Select
+    </option>
+    <option *ngFor="let option of optionsList" [value]="option?.name">
+      {{ option?.name }}
+    </option>
+  </select>
+</div>

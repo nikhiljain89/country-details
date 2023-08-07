@@ -1,0 +1,23 @@
+<div *ngIf="selectedCountry$ | async as country">
+  <h3>Country Details</h3>
+  <table class="table table-bordered bg-light">
+    <thead class="bg-secondary text-white">
+      <tr>
+        <th>Name</th>
+        <th>Capital</th>
+        <th>Population</th>
+        <th>Currencies</th>
+        <th>Flag</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ country.name }}</td>
+        <td>{{ country.capital }}</td>
+        <td>{{ country.population }}</td>
+        <td>{{ country.currency }}</td>
+        <td><img [src]="country.flag" [alt]="country.name + ' Flag'" [height]="64" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

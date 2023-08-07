@@ -1,0 +1,3 @@
+<app-dropdown label="Region" [optionsList]="regions$ | async" [defaultSelection]="selectedRegion$ | async"
+    (optionChange)="handleOptionChange($event)">
+</app-dropdown>
