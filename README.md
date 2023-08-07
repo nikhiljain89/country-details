@@ -1,27 +1,44 @@
-# UITest
+# Country Details
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9. This application fetch the country details from API on selection on region. The application using `NgRx` for state management.
 
-## Development server
+## Get started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Clone the repo
 
-## Code scaffolding
+```shell
+git clone https://github.com/nikhiljain89/country-details.git
+cd country-details
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Install npm packages
 
-## Build
+Install the `npm` packages described in the `package.json` and verify that it works:
 
+```shell
+npm install
+npm start
+```
+
+## Run and Build
+
+Run `ng serve` command to run the project. By default the app will run on `http://localhost:4200/`.
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Coding Guidelines
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Country Details app uses Modular structure and Single Responsibility Principle(SRP).
 
-## Running end-to-end tests
+### Naming Conventions
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### Classnames
 
-## Further help
+Upper camel case style is used with the added suffix that represents the type of file. e.g. RegionComponent
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Variable Names
+
+Lower camel case is used for variable naming. e.g. regionName
+
+## Styling Guidelines
+
+Sass preprocessor is used with SCSS syntax. 
